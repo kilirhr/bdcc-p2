@@ -1,5 +1,7 @@
 FROM python:3.12-slim-bookworm
 WORKDIR /app
 # Add the instruction that copies validate.py into /app.
+COPY validate.py .
 # Add the instruction that starts python /app/validate.py.
+ENTRYPOINT ["python", "/app/validate.py"]
 CMD ["--input", "/input/transactions_initial.csv", "--output-dir", "/output", "--run", "initial"]

@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "validator_version": "p2-1.0",
+  "run": "initial",
+  "input": "/input/transactions_initial.csv",
+  "input_sha256": "454efcc2e80be19e0ed99fe2c1e20f18f86f627dc7a3a04f39ef5a1b6e3a1ce2",
+  "counts": {
+    "delivered": 150350,
+    "accepted": 150000,
+    "rejected": 150,
+    "duplicates": 200
+  },
+  "rejection_reasons": {
+    "missing_identifier": 50,
+    "invalid_amount": 30,
+    "unknown_bank": 30,
+    "invalid_timestamp": 40
+  },
+  "python": "3.12.16",
+  "platform": "x86_64",
+  "image_id": "sha256:ff465017a40a3acbdc199fd4de61fc8368185a0841fe72aa0d8e06d4c2d21eb1",
+  "program_sha256": "41e1afedecac6abd1918bd2f06d74ac3ae1950ae0d0f5a33809596aba0535f93",
+  "start_utc": "2026-11-17T11:52:47.143632+00:00",
+  "elapsed_seconds": 3.796,
+  "output_sha256": {
+    "accepted.csv": "6b12d4bf9f7ecec1ea0d78e11194bc52169213f7c015a9b74c02c709bc2508f2",
+    "duplicates.csv": "a6ce847e2c03c4fd24858c28b3b91e8b94b723536e0cca245ea99f094e49e100",
+    "rejected.csv": "8c1b15e0a19eca92a80cdf3be8f735b16350a928da88322f979769e4b4f1e714"
+  }
+}

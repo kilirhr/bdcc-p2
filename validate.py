@@ -36,7 +36,7 @@ def valid_time(value):
 
 def reason(row):
     # P2 exercise: which other identifier does the P1 contract require?
-    if not row["transaction_id"].strip():
+    if not row["transaction_id"].strip() or not row["customer_id"].strip():
         return "missing_identifier"
     event, arrival = row["event_timestamp"], row["ingestion_timestamp"]
     if not valid_time(event) or not valid_time(arrival) or arrival < event:

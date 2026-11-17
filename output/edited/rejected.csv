@@ -1,0 +1,4 @@
+source_record,reason,transaction_id,event_timestamp,ingestion_timestamp,customer_id,card_id,issuer_bank_id,acquirer_bank_id,operation_cd,payment_method_cd,service_id,merchant_id,terminal_id,terminal_type_cd,channel_cd,terminal_country_cd,card_country_cd,currency_cd,amount_minor,response_cd,entry_mode_cd,authentication_cd,device_id,related_transaction_id,source_system,batch_id
+5,invalid_amount,C,2026-01-01T00:06:34Z,2026-01-01T00:08:44Z,C001116,CARD001395,B004,B004,PURCHASE,CARD,S01,M00031,TERM00085,POS,POS,PT,PT,EUR,0,APP,CHIP,PIN,,,SRC_POS,BATCH_INITIAL
+7,invalid_timestamp,E,2026-02-30T10:00:00Z,2026-01-01T00:08:44Z,C001116,CARD001395,B004,B004,PURCHASE,CARD,S01,M00031,TERM00085,POS,POS,PT,PT,EUR,2400,APP,CHIP,PIN,,,SRC_POS,BATCH_INITIAL
+8,unknown_bank,F,2026-01-01T00:06:34Z,2026-01-01T00:08:44Z,C001116,CARD001395,B999,B004,PURCHASE,CARD,S01,M00031,TERM00085,POS,POS,PT,PT,EUR,1000,APP,CHIP,PIN,,,SRC_POS,BATCH_INITIAL
